@@ -1,0 +1,135 @@
+/* Color Palette */
+:root {
+    --main-color: #ffffff;
+    --secondary-color: #1f2937;
+    --primary-color: #198754;
+    --tertiary-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Typography */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--secondary-color);
+    margin-bottom: 0.75rem;
+}
+
+p {
+    font-size: 2.5rem;
+    line-height: 1.7;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
+/* Anchor Styles */
+a {
+    color: var(--main-color);
+    text-decoration: underline;
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+}
+
+a:hover {
+    text-decoration: none;
+
+}
+
+
+.footer-span {
+    width: 20%;
+}
+
+/* Responsive Typography Adjustments */
+
+/* Laptops and small desktops (≤ 1366px) */
+@media (max-width: 1440px) {
+    h1 {
+        font-size: 2.25rem;
+    }
+
+    header h1 {
+        font-size: 2.25rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    p {
+        font-size: 1.05rem;
+    }
+
+}
+
+/* Tablets (≤ 1024px) */
+@media (max-width: 1024px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+}
+
+/* Mobile Devices (≤ 768px) */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    header h1 {
+        font-size: 1.75rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+
+    p {
+        font-size: 0.95rem;
+    }
+
+}
+
+/* Very Small Screens (≤ 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.125rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+
+    .footer-span {
+        font-size: 0.5rem;
+        margin: 0;
+        padding: 0;
+    }
+
+}

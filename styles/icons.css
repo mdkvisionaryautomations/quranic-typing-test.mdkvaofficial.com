@@ -1,0 +1,24 @@
+/* Color Palette */
+:root {
+    --main-color: #ffffff;
+    --secondary-color: #1f2937;
+    --primary-color: #198754;
+    --tertiary-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Icon Styles */
+#refresh-icon,
+#github-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    fill: var(--main-color);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    cursor: pointer;
+}
+
+/* Hover Effects */
+#github-icon:hover,
+#refresh-icon:hover {
+    transform: scale(1.1);
+    opacity: 0.85;
+}

@@ -1,0 +1,6 @@
+add surah wise 
+add parah wise 
+add muteable sound for each press 
+add signup and picking the usernames
+add leaderboard
+buy domain "quranictypingtest.org"

@@ -1,0 +1,115 @@
+/* Reset & Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Palette */
+:root {
+    --main-color: #ffffff;
+    --secondary-color: #1f2937;
+    --primary-color: #198754;
+    --primary-dark: #14532d;
+    --tertiary-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 2em;
+    min-height: 80%;
+    background-color: #f9fafb;
+}
+
+/* Verse Container */
+.verse-container {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 1rem;
+    width: 75vw;
+    min-height: 50%;
+    padding: 2.5em;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.verse-container:hover {
+    transform: translateY(-4px);
+}
+
+.verse-container h1,
+.verse-container h2,
+.verse-container p {
+    margin: 0.75em 0;
+}
+
+.bismillah {
+    font-style: italic;
+    color: #6b7280;
+}
+
+/* Typing Area */
+#verse-text {
+    text-align: justify;
+    line-height: 1.8;
+    font-family: 'Georgia', serif;
+}
+
+#verse-text span {
+    transition: color 0.1s;
+}
+
+#verse-text .active-char {
+    border-bottom: 2px solid var(--primary-color);
+}
+
+/* Cursor Blink Animation */
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Button Styles */
+.button-container {
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: #ffffff;
+    padding: 0.8em 1.5em;
+    border: none;
+    border-radius: 0.75rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 120px;
+}
+
+button:hover {
+    background-color: var(--primary-dark);
+    transform: scale(1.05);
+}
+
+/* WPM Display */
+#wpm-display {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-top: 1.5rem;
+    text-align: center;
+    font-family: 'Courier New', monospace;
+}

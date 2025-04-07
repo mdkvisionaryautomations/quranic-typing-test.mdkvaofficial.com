@@ -1,0 +1,49 @@
+/* Base Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Color Variables */
+:root {
+    --main-color: #ffffff;
+    --secondary-color: #1f2937;
+    --primary-color: #198754;
+    --primary-dark: #14532d;
+    --tertiary-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Footer Styles */
+footer {
+    background: linear-gradient(to right, var(--primary-dark) 0%, var(--primary-color) 100%);
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2rem;
+    flex-wrap: wrap;
+    font-size: 0.95rem;
+    min-height: 20%;
+    box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Footer Items */
+footer>* {
+    margin: 0.5rem 1rem;
+}
+
+/* Collaboration Section */
+.collaboration {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+    font-weight: 500;
+}
+
+.collaboration img,
+.collaboration svg {
+    width: 24px;
+    height: 24px;
+}

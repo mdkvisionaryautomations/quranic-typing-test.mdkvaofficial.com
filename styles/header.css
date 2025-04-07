@@ -1,0 +1,45 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: 'Georgia', serif;
+    background-color: #f0f4f8;
+    color: var(--secondary-color);
+    line-height: 1.6;
+}
+
+/* Color Palette */
+:root {
+    --main-color: #ffffff;
+    --secondary-color: #1f2937;
+    --primary-color: #198754;
+    --primary-dark: #14532d;
+    --tertiary-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Header Styles */
+header {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    min-height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 0.5em 1.5em;
+    color: var(--main-color);
+}
