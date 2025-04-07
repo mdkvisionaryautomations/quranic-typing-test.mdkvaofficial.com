@@ -26,7 +26,7 @@ fetch('./../json/al-quran.json')
     startTyping();
   })
   .catch(error => {
-    console.error('Error loading verses:', error);
+    console.error('Error loading verses:');
   });
 
 
@@ -44,7 +44,7 @@ function startTyping() {
   updateActiveCursor(spans);
 
   document.addEventListener("keydown", handleTyping);
-
+  document.getElementById("mobile-input").focus();
 
 
 

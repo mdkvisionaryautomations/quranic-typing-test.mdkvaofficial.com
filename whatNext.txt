@@ -3,4 +3,5 @@ add parah wise
 add muteable sound for each press 
 add signup and picking the usernames
 add leaderboard
+add pwa
 buy domain "quranictypingtest.org"
